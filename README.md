@@ -39,14 +39,19 @@ Bu proje, klasik makine öğrenmesi algoritmalarını modern web teknolojileriyl
 
 ## ⚙️ Kurulum ve Çalıştırma
 
-Projeyi yerel makinenizde çalıştırmak için aşağıdaki adımları izleyin.
+Projeyi yerel makinenizde çalıştırmak için aşağıdaki adımları sırasıyla uygulayın.
 
 ### 1. Projeyi Klonlayın
+Öncelikle terminalinizi açın ve projeyi bilgisayarınıza indirin:
+
 ```bash
 git clone [https://github.com/kullaniciadin/cineai-pro.git](https://github.com/kullaniciadin/cineai-pro.git)
 cd cineai-pro
+```
 
-##2. Backend Kurulumu (Python)
+### 2. Backend Kurulumu (Python)
+
+```bash
 cd backend
 
 # Gerekli kütüphaneleri yükleyin
@@ -54,12 +59,12 @@ pip install fastapi uvicorn joblib scikit-learn pandas deep-translator
 
 # API sunucusunu başlatın
 uvicorn main:app --reload
+```
 
-
-
-##Frontend Kurulumu (Next.js)
+### 3. Frontend Kurulumu (Next.js)
 Yeni bir terminal açın ve proje ana dizinine dönün.
 
+```bash
 cd frontend
 
 # Paketleri yükleyin
@@ -67,11 +72,17 @@ npm install
 
 # Uygulamayı başlatın
 npm run dev
+```
 
-##📊 Model Performansı
+---
+
+## 📊 Model Performansı
 Proje geliştirme sürecinde, ham veri ile %47 seviyesinde olan başarı oranı, uygulanan ileri tekniklerle %78.27 seviyesine çıkarılmıştır.
+
 Model,Accuracy (Esnek),ROC-AUC
 Naive Bayes,%76.33,0.870
 Random Forest,%75.00,0.865
 Voting Ensemble,%78.27,0.887
+
+
 
