@@ -79,10 +79,12 @@ npm run dev
 ## 📊 Model Performansı
 Proje geliştirme sürecinde, ham veri ile %47 seviyesinde olan başarı oranı, uygulanan ileri tekniklerle %78.27 seviyesine çıkarılmıştır.
 
+```bash
 Model,Accuracy (Esnek),ROC-AUC
 Naive Bayes,%76.33,0.870
 Random Forest,%75.00,0.865
 Voting Ensemble,%78.27,0.887
+```
 
 
 
